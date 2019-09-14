@@ -2,12 +2,93 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/oldwoman"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+    <LinearLayout
+        android:layout_below="@id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:text="Martha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"
+            />
+        <TextView
+            android:text="72 Years, Female"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"
+            />
+        <TextView
+            android:text="Speaks: English, Spanish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"
+            />
+        <TextView
+            android:text="Understands: English, Spanish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"
+            />
+        <TextView
+            android:id="@+id/mobNum"
+            android:text="(480)-937-4079"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"
+            />
+        <TextView
+            android:id="@+id/address"
+            android:text="1718 S Jentily Lane, 117"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:text="Call"
+        android:layout_alignParentLeft="true"
+        android:background="@color/colorAccent"
+        android:textColor="#ffffff"
+        />
     <Button
         android:id="@+id/openMap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="10dp"
         android:text="PICK UP"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_margin="20dp"
+        android:background="@color/colorAccent"
+        android:textColor="#ffffff"
         />
 </RelativeLayout>

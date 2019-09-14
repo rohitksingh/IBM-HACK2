@@ -3,9 +3,11 @@
     package="com.example.user_pc.loginui">
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-feature android:name="android.hardware.camera"/>
 
     <application
         android:allowBackup="true"
@@ -32,6 +34,8 @@
         <activity android:name=".GetStartedActivity"></activity>
         <activity android:name=".FormActivity"/>
         <activity android:name=".ProfileActivity"/>
+        <activity android:name=".QuestionnaireActivity"/>
+        <activity android:name=".UserActivity"/>
     </application>
 
 </manifest>

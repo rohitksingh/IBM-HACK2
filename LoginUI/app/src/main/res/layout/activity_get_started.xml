@@ -6,11 +6,24 @@
     android:layout_height="match_parent"
     android:background="@drawable/get_started_background"
     tools:context=".GetStartedActivity">
+    <TextView
+        android:id="@+id/skipIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SKIP"
+        android:textColor="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="30dp"
+
+        />
 
     <android.support.v4.view.ViewPager
         android:id="@+id/slide_view_pager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+        android:layout_height="match_parent"
+        android:layout_below="@id/skipIntro"
+        ></android.support.v4.view.ViewPager>
 
     <LinearLayout
         android:id="@+id/dots_layout"
