@@ -96,7 +96,7 @@
         android:id="@+id/vehicle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Vehicle Type"
+        android:hint="Vehicle Type and Space"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/affilations"
         />
@@ -105,7 +105,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Done"
-        android:background="@color/colorPrimary"
+        android:background="@color/colorAccent"
         android:textColor="#ffffff"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
