@@ -38,7 +38,7 @@ public class GetStartedActivity extends AppCompatActivity {
 
                 Toast.makeText(GetStartedActivity.this, "Hey", Toast.LENGTH_LONG).show();
 
-                Intent intent = new Intent(GetStartedActivity.this, FormActivity.class);
+                Intent intent = new Intent(GetStartedActivity.this, UserActivity.class);
                 startActivity(intent);
             }
         });

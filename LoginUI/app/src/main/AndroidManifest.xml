@@ -33,6 +33,8 @@
         <activity android:name=".GetStartedActivity"></activity>
         <activity android:name=".FormActivity"/>
         <activity android:name=".ProfileActivity"/>
+        <activity android:name=".QuestionnaireActivity"/>
+        <activity android:name=".UserActivity"/>
     </application>
 
 </manifest>
