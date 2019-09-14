@@ -30,6 +30,8 @@
         <activity android:name=".SecondActivity" />
         <activity android:name=".ForgotPasswordActivity" />
         <activity android:name=".GetStartedActivity"></activity>
+        <activity android:name=".FormActivity"/>
+        <activity android:name=".ProfileActivity"/>
     </application>
 
 </manifest>
