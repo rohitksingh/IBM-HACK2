@@ -11,7 +11,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/app_logo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -35,7 +35,23 @@
         <activity android:name=".FormActivity"/>
         <activity android:name=".ProfileActivity"/>
         <activity android:name=".QuestionnaireActivity"/>
-        <activity android:name=".UserActivity"/>
+        <activity android:name=".UserActivity">
+            <intent-filter>
+                <action android:name="com.example.user_pc.loginui"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <service android:name=".services.MyFirebaseMessaginService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".services.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>

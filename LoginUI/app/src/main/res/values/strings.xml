@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">LoginUI</string>
+    <string name="app_name">Care Centric</string>
 
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
