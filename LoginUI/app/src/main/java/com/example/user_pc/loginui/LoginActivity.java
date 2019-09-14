@@ -74,7 +74,10 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // TODO : Validatethe fields first
                 Toast.makeText(LoginActivity.this, "Starting Validation", Toast.LENGTH_LONG);
-                validate(usernameEt.getText().toString().trim(), passwordEt.getText().toString().trim());
+                //validate(usernameEt.getText().toString().trim(), passwordEt.getText().toString().trim()); //<-- Uncomment
+
+                startActivity(new Intent(LoginActivity.this, GetStartedActivity.class));
+
             }
         });
 
