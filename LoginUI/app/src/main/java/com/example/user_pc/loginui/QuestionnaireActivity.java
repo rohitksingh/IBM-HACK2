@@ -1,6 +1,14 @@
 package com.example.user_pc.loginui;
 
+import android.Manifest;
+import android.app.Activity;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
+import android.os.Build;
 import android.os.Bundle;
+import android.provider.MediaStore;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
@@ -9,6 +17,9 @@ import android.widget.Toast;
 public class QuestionnaireActivity extends AppCompatActivity {
 
     private ImageView imageView;
+
+    private static final int MY_CAMERA_PERMISSION_CODE = 100;
+    private static final int CAMERA_REQUEST = 1888;
 
     @Override
     public void onCreate(Bundle sis){
@@ -26,8 +37,20 @@ public class QuestionnaireActivity extends AppCompatActivity {
 
     }
 
+
+
     public void takePhoto(){
-        Toast.makeText(this, "ss", Toast.LENGTH_LONG).show();
+        Intent cameraIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+        startActivityForResult(cameraIntent, CAMERA_REQUEST);
     }
 
+
+    protected void onActivityResult(int requestCode, int resultCode, Intent data)
+    {
+        if (requestCode == CAMERA_REQUEST && resultCode == Activity.RESULT_OK)
+        {
+            Bitmap photo = (Bitmap) data.getExtras().get("data");
+            imageView.setImageBitmap(photo);
+        }
+    }
 }
