@@ -9,7 +9,7 @@
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Name"
+        android:hint="First Name"
         />
     <RadioGroup
         android:id="@+id/gender"
@@ -38,39 +38,14 @@
             android:text="Female" />
 
     </RadioGroup>
-    <RadioGroup
-        android:id="@+id/doctor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_below="@id/gender"
-        >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Knows First Aid"
-            />
-        <RadioButton
-            android:id="@+id/NO"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="NO"
-            android:checked="true" />
 
-        <RadioButton
-            android:id="@+id/YES"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="YES" />
-
-    </RadioGroup>
 
     <EditText
         android:id="@+id/age"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Age"
-        android:layout_below="@id/doctor"
+        android:layout_below="@id/gender"
         />
 
     <EditText
@@ -108,12 +83,26 @@
         android:hint="Vehicle Type"
         android:layout_below="@id/affilations"
         />
+    <EditText
+        android:id="@+id/pets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="How many pets do you have"
+        android:layout_below="@id/vehicle"
+        />
+    <EditText
+        android:id="@+id/medications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Do you take medcation"
+        android:layout_below="@id/pets"
+        />
     <Button
-        android:id="@+id/sign_up"
+        android:id="@+id/done"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Done"
-        android:background="@color/colorPrimary"
+        android:background="@color/colorAccent"
         android:textColor="#ffffff"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
@@ -123,7 +112,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:background="@drawable/camera"
-        android:layout_below="@id/vehicle"
+        android:layout_below="@id/medications"
 
         />
 </RelativeLayout>

@@ -28,10 +28,8 @@ public class FormActivity extends AppCompatActivity {
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(FormActivity.this, "Done", Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(FormActivity.this, ProfileActivity.class);
-                intent.putExtra("Name", name.getText().toString());
-                startActivity(intent);
+                Toast.makeText(FormActivity.this, "Info added to Server", Toast.LENGTH_LONG).show();
+                finish();
             }
         });
 

@@ -11,12 +11,14 @@ import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
 public class QuestionnaireActivity extends AppCompatActivity {
 
     private ImageView imageView;
+    private Button done;
 
     private static final int MY_CAMERA_PERMISSION_CODE = 100;
     private static final int CAMERA_REQUEST = 1888;
@@ -32,6 +34,15 @@ public class QuestionnaireActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 takePhoto();
+            }
+        });
+
+        done = findViewById(R.id.done);
+        done.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(QuestionnaireActivity.this, "Info added to Database", Toast.LENGTH_SHORT).show();
+                finish();
             }
         });
 

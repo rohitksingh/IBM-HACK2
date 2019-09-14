@@ -8,7 +8,7 @@
         android:layout_height="100dp"
         android:background="@drawable/oldwoman"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         />
     <LinearLayout
         android:layout_below="@id/image"
@@ -43,6 +43,22 @@
             />
         <TextView
             android:text="Understands: English, Spanish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"
+            />
+        <TextView
+            android:text="Animals: 1 Cat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"
+            />
+        <TextView
+            android:text="Accomodations: Wheelchair"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
