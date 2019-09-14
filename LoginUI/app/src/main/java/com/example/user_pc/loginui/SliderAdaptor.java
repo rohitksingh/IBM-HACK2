@@ -18,21 +18,21 @@ public class SliderAdaptor extends PagerAdapter {
     LayoutInflater layoutInflater;
 
     public int[] images = {
-            R.drawable.starter_image_1,
-            R.drawable.starter_image_2,
-            R.drawable.starter_image_3
+            R.drawable.slide1,
+            R.drawable.slide3,
+            R.drawable.slide_2
     };
 
     public String[] headings = {
-            "EAT",
-            "CODE",
-            "SLEEP"
+            "",
+            "",
+            ""
     };
 
     public String[] descriptions = {
-            "You gotta eat, what you gotta eat because thats the most important part of your life!",
-            "If you don't know coding, you'll never be able to make this android app, but here you are!",
-            "pubg....zzzzzzz.....pubg...zzzz.."
+            "Sign up by calling in or through the app. Share relevant data about your situation. ",
+            "Volunteers relevant to your needs will receive a push notification",
+            "Volunteers will be deployed to help with prioritized tasks and route."
     };
 
     public SliderAdaptor(Context context) {
