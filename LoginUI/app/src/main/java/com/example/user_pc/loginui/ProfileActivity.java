@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.text.method.LinkMovementMethod;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -31,7 +32,17 @@ public class ProfileActivity extends AppCompatActivity {
         mobNum.setMovementMethod(LinkMovementMethod.getInstance());
         //getSupportActionBar().setTitle(name);
 
-        Toast.makeText(ProfileActivity.this, name, Toast.LENGTH_LONG).show();
+
+
+        String extraMsg = getIntent().getStringExtra("click_action");
+        if(extraMsg!=null) {
+            Toast.makeText(ProfileActivity.this,extraMsg , Toast.LENGTH_LONG).show();
+        }else
+        {
+            Toast.makeText(ProfileActivity.this,"NULL" , Toast.LENGTH_LONG).show();
+        }
+
+
 
         openMap.setOnClickListener(new View.OnClickListener() {
             @Override

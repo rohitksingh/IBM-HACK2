@@ -3,12 +3,14 @@ package com.example.user_pc.loginui;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
 public class UserActivity extends AppCompatActivity {
 
     private Button myInfo, yourInfo, see;
+    private static final String TAG = "UserActivity";
 
     @Override
     public void onCreate(Bundle savedInstanceState){
@@ -38,6 +40,7 @@ public class UserActivity extends AppCompatActivity {
                 reachOut();
             }
         });
+
 
 
     }
