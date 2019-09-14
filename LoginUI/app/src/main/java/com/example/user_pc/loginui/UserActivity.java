@@ -41,15 +41,6 @@ public class UserActivity extends AppCompatActivity {
             }
         });
 
-        String extraMsg = getIntent().getStringExtra("click_action");
-        if(extraMsg!=null) {
-            Log.d(TAG, "onCreate: "+extraMsg);
-        }else
-        {
-            Log.d(TAG, "onCreate: is Null");
-        }
-
-
 
 
     }

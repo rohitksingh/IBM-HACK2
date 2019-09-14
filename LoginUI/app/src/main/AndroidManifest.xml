@@ -33,13 +33,15 @@
         <activity android:name=".ForgotPasswordActivity" />
         <activity android:name=".GetStartedActivity"></activity>
         <activity android:name=".FormActivity"/>
-        <activity android:name=".ProfileActivity"/>
-        <activity android:name=".QuestionnaireActivity"/>
-        <activity android:name=".UserActivity">
+        <activity android:name=".ProfileActivity">
             <intent-filter>
                 <action android:name="com.example.user_pc.loginui"/>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+        </activity>
+        <activity android:name=".QuestionnaireActivity"/>
+        <activity android:name=".UserActivity">
+
         </activity>
         <service android:name=".services.MyFirebaseMessaginService">
             <intent-filter>
